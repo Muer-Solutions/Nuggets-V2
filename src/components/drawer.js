@@ -32,7 +32,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
                 <li className="w-72 px-3 py-2 flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
                   <a
                     className="no-underline hover:text-secondary text-white transition ease-in-out duration-700"
-                    href="/"
+                    href="#"
                   >
                     Home
                   </a>
