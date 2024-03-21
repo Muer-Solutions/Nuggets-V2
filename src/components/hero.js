@@ -3,11 +3,11 @@ import NavbarSection from "./navbar";
 
 const Hero = () => {
   return (
-    <section className="h-screen bg-secondary pb-4">
+    <section className="md:h-screen h-auto bg-secondary pb-4">
       <NavbarSection />
-      <div className="flex items-center justify-between px-20 h-screen">
-        <div className="w-1/2 space-y-4">
-          <h1 className="text-5xl text-primary font-bold">
+      <div className="flex items-center justify-between sm:px-20 px-4 md:h-screen h-[70vh]">
+        <div className="md:w-1/2 w-full space-y-4">
+          <h1 className="md:text-5xl text-3xl text-primary font-bold">
             Your Experts in Heart Health Nutrition.
           </h1>
           <p className="">
@@ -20,7 +20,7 @@ const Hero = () => {
             </button>
           </a>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 md:block hidden">
           <div className="relative">
             <img
               className="h-[80vh] w-96 mx-auto object-cover rounded-xl"
@@ -28,11 +28,6 @@ const Hero = () => {
               alt=""
             />
             <div className="absolute bg-primary bottom-8 right-78 p-4 rounded-xl space-y-2 w-56">
-              {/* <img
-                className="h-[30vh] w-48 mx-auto object-cover rounded-xl"
-                src="/hero2.jpg"
-                alt=""
-              /> */}
               <q className="text-sm text-white">
                 Your Experts in Heart Health Nutrition.
               </q>

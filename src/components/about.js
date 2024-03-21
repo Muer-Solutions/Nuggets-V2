@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="h-screen px-20 py-10 flex items-center gap-4 justify-between">
-      <div className="w-1/2 space-y-4">
-        <h1 className="text-4xl">
+    <section id="about" className="md:h-screen h-auto sm:px-20 px-4 py-10 md:flex items-center gap-4 justify-between">
+      <div className="md:w-1/2 w-full space-y-4 text-center">
+        <h1 className="md:text-4xl text-3xl">
           Mindful Eating for Healthy Hearts.
         </h1>
         <p className="">

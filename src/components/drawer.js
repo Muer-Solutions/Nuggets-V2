@@ -30,20 +30,36 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
             <div className="flex items-center justify-end px-48">
               <ul className="text-left space-y-4 w-48 py-12">
                 <li className="w-72 px-3 py-2 flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
-                  <Link
-                    className="no-underline hover:text-secondary transition ease-in-out duration-700"
-                    href="/students"
+                  <a
+                    className="no-underline hover:text-secondary text-white transition ease-in-out duration-700"
+                    href="/"
                   >
-                    For Students
-                  </Link>
+                    Home
+                  </a>
                 </li>
                 <li className="w-72 px-3 py-2 group flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
-                  <Link
-                    className="no-underline hover:text-secondary transition ease-in-out duration-700"
-                    href="/about"
+                  <a
+                    className="no-underline hover:text-secondary text-white transition ease-in-out duration-700"
+                    href="#about"
                   >
-                    How it Works
-                  </Link>
+                    About
+                  </a>
+                </li>
+                <li className="w-72 px-3 py-2 group flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
+                  <a
+                    className="no-underline hover:text-secondary text-white transition ease-in-out duration-700"
+                    href="#wedo"
+                  >
+                    What We Do
+                  </a>
+                </li>
+                <li className="w-72 px-3 py-2 group flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
+                  <a
+                    className="no-underline hover:text-secondary text-white transition ease-in-out duration-700"
+                    href="#products"
+                  >
+                    Products
+                  </a>
                 </li>
               </ul>
             </div>

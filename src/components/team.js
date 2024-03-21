@@ -6,6 +6,7 @@ const Team = () => {
     <section className="sm:px-20 px-4 py-10 space-y-4 md:h-[80vh] h-auto bg-secondary">
       <div className="text-center">
         <h1 className="text-3xl">Our Team</h1>
+        <div className="border-b-4 border-black w-28 mx-auto mt-2"></div>
       </div>
       <section className="md:flex items-center gap-4 justify-between md:space-y-0 space-y-4">
         {team.map((item, index) => (
