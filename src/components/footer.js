@@ -4,7 +4,7 @@ import { FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="bg-primary px-20 py-10 text-white">
+    <section className="bg-primary sm:px-20 px-4 py-10 text-white">
       <section className="md:flex gap-4 justify-between items-center md:space-y-0 space-y-8">
         <div className="space-y-4">
           <h1 className="text-center font-bold">Healthy Nuggets</h1>
