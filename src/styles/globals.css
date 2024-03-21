@@ -1,33 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight&family=Kumbh+Sans&family=Nunito:wght@400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;900&family=Inter:wght@200;300;400&family=Josefin+Sans:wght@300;400&family=Kumbh+Sans&family=Montserrat&family=Nunito:wght@400;500;600;700&family=Poltawski+Nowy:wght@500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&family=Space+Grotesk&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+    /* font-family: 'Nunito', sans-serif; */
+  font-family: "Space Grotesk", sans-serif;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  html {
+    scroll-behavior: smooth;
   }
-}
+  
+
+.heroImg {
+    background-image: url("/nugg.webp");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+  }
+  .heroImg::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: -1;
+  }
+
+
+  .owl-item.center {
+    z-index: 1;
+  }
+  
+  .owl-item.active.center {
+    z-index: 2;
+  }
+  
+  /* testimonial carousel */
+  .owl-item.active.center .slider-card {
+    transform: scale(1.2);
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 1;
+    background: #204B1B;
+    color: white;
+    z-index: 3;
+  }
+  
+  @media (max-width: 576px) {
+    .owl-item.active.center .slider-card {
+      transform: scale(0.9);
+      position: relative;
+      padding-left: 20px;
+      padding-right: 20px;
+      opacity: 1;
+      background: #204B1B;
+      color: #fff;
+      z-index: 3;
+    }
+  }
+  
+  .slider-card {
+    background: #f7f7f7;
+    /* border: 1px solid #e4dede; */
+    opacity: 0.8;
+    color: black;
+    padding: 0px 0px;
+    margin-top: 50px;
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
