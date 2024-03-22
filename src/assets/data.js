@@ -48,18 +48,18 @@ export const products = [
 
   export const team = [
     {
-      img: "/profile.jpg",
-      name: "Jane Doe",
-      field: "Design and User Experience",
+      img: "/maureen.jpeg",
+      name: "Maureen Nkirote",
+      field: "RDN- Director",
+    },
+    {
+      img: "/faith.jpeg",
+      name: "Faith Mwangi",
+      field: "RDN- Director",
     },
     {
       img: "/profile.jpg",
-      name: "Ann Wills",
-      field: "Vocabulary and Arts",
-    },
-    {
-      img: "/profile.jpg",
-      name: "Jane Doe",
+      name: "Brian Kivuti",
       field: "Technology Expert",
     },
   ];
