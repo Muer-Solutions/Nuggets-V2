@@ -32,8 +32,7 @@ const Hero = () => {
                 Your Experts in Heart Health Nutrition.
               </q>
               <div className="block text-white">
-                <span className="text-xs">Carol Peters</span>
-                <span className="text-xs block">Founder ABC Academy</span>
+                <span className="text-xs">Maureen Nkirote</span>
               </div>
             </div>
           </div>
